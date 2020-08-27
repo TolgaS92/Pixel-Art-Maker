@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PixelArtMaker|TolgaSecme</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tolga Secme</h1>
+    <h1>Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <h5>Create a table once with desired parameters: height determines number of rows while so does the width do so for number of columns on the table!</h5>
+    <p>Parameters should be between 1 through 99 </p>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" max="99" value="1">
+        Grid Width:
+        <input type="number" id="inputWidth" name="width" min="1"  max="99" value="1">
+        <input type="submit" id="submit-button">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <h5>No hesitate to choose different colors to color the table cells dynamically!'</h5>
+    <input type="color" id="colorPicker">
+
+    <h2>Design Canvas</h2>
+    <h5>Please make a selection if there is no grid below this text!</h5>
+    <table id="pixelCanvas">
+    </table>
+
+    <script src="designs.js"></script>
+</body>
+</html>
